@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".entrance_fragments.EmailFragment">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/some_rectangle_form"
+            android:padding="10dp"
+            android:id="@+id/email_input" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.305"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/some_rectangle_form"
+            android:padding="10dp"
+            android:id="@+id/password_input" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/email_input" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/some_rectangle_form"
+            android:padding="10dp"
+            android:id="@+id/password2_input" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/password_input" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="@string/ru_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/email_text" app:layout_constraintStart_toStartOf="@+id/email_input"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/email_input"/>
+    <TextView
+            android:text="@string/ru_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/pass1_text" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/password_input"
+            app:layout_constraintStart_toStartOf="@+id/password_input" android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="@string/ru_confirm_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/pass2_text"
+            app:layout_constraintStart_toStartOf="@+id/password2_input" android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/password2_input"/>
+
+</android.support.constraint.ConstraintLayout>

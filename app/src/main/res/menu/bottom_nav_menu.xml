@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_person"
+            android:icon="@drawable/ic_person_outline_black_24dp"
+            android:title="Профиль"/>
+
+    <item
+            android:id="@+id/navigation_realtime"
+            android:icon="@drawable/ic_query_builder_black_24dp"
+            android:title="Анализ"/>
+
+    <item
+            android:id="@+id/navigation_add_measurements"
+            android:icon="@drawable/ic_add_circle_outline_black_24dp"
+            android:title="Измерение"/>
+
+</menu>

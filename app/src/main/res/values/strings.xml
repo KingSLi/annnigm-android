@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AnnNigm</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_enter">Войти</string>
+    <string name="registration">Регистрация</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="ru_password">Пароль</string>
+    <string name="ru_email">Почта</string>
+    <string name="ru_confirm_pass">Подтвердите пароль</string>
+    <string name="ru_name">Имя</string>
+    <string name="ru_surname">Фамилия</string>
+    <string name="ru_birthday">Дата рождения</string>
+    <string name="height_sm">Рост, см</string>
+    <string name="weight_kg">Вес, кг</string>
+    <string name="type_measurement_eat">Питание</string>
+    <string name="type_measurement_insulin">Инсулин</string>
+    <string name="type_measurement_device">Глюкометр</string>
+    <string name="types_all">Все</string>
+    <string name="input_sex">Пол</string>
+</resources>

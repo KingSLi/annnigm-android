@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".entrance_fragments.NameFragment">
+
+
+    <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+    >
+        <TableRow android:padding="10dp">
+            <TextView
+                    android:text="@string/ru_name"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_name"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/some_rectangle_form"
+                    android:padding="10dp"
+                    android:id="@+id/person_name"/>
+        </TableRow>
+        <TableRow android:padding="10dp">
+            <TextView
+                    android:text="@string/ru_surname"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_surname"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimary"
+                    android:ems="10"
+                    android:background="@drawable/some_rectangle_form"
+                    android:padding="10dp"
+                    android:id="@+id/person_email"/>
+        </TableRow>
+        <TableRow android:padding="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ru_birthday"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/view_date"/>
+            <LinearLayout
+                    android:background="@drawable/some_rectangle_form"
+                    android:layout_weight="1">
+                <EditText
+                        android:id="@+id/person_date"
+                        android:layout_width="230dp"
+                        android:inputType="datetime"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"/>
+                <Button
+                        android:background="@drawable/ic_more"
+                        android:layout_height="24dp"
+                        android:id="@+id/button_data_more"
+                        android:layout_width="24dp"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow android:padding="10dp" android:gravity="center">
+            <TextView
+                    android:text="@string/input_sex"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_sex"/>
+            <info.hoang8f.android.segmented.SegmentedGroup
+                    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/person_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    segmentedgroup:sc_border_width="2dp"
+                    segmentedgroup:sc_corner_radius="10dp"
+                    android:layout_gravity="center_horizontal">
+
+                <RadioButton
+                        android:id="@+id/person_gender_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="муж"
+                        style="@style/RadioButton"/>
+
+                <RadioButton
+                        android:id="@+id/person_gender_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="жен"
+                        style="@style/RadioButton"/>
+            </info.hoang8f.android.segmented.SegmentedGroup>
+        </TableRow>
+        <TableRow android:padding="10dp">
+            <TextView
+                    android:text="@string/weight_kg"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_weight"/>
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:background="@drawable/some_rectangle_form"
+                    android:ems="10"
+                    android:id="@+id/person_weight"/>
+        </TableRow>
+        <TableRow android:padding="10dp">
+            <TextView
+                    android:text="@string/height_sm"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_height"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="number"
+                    android:background="@drawable/some_rectangle_form"
+                    android:padding="10dp"
+                    android:ems="10"
+                    android:id="@+id/person_height"/>
+        </TableRow>
+    </TableLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

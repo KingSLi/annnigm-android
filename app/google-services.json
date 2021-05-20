@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "516315094702",
+    "firebase_url": "https://klipsa-fd96a.firebaseio.com",
+    "project_id": "klipsa-fd96a",
+    "storage_bucket": "klipsa-fd96a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516315094702:android:be204ccd7e6b9146",
+        "android_client_info": {
+          "package_name": "edu.phystech.annigm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516315094702-bdndd6rbaf77lmsafb1vni1ev8im77dc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuO5u9EnsTDMiKTeBLu4LnLeWHQUulGaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516315094702-bdndd6rbaf77lmsafb1vni1ev8im77dc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516315094702:android:a08aee0325de20b2",
+        "android_client_info": {
+          "package_name": "edu.phystech.annnigm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516315094702-bdndd6rbaf77lmsafb1vni1ev8im77dc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuO5u9EnsTDMiKTeBLu4LnLeWHQUulGaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516315094702-bdndd6rbaf77lmsafb1vni1ev8im77dc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

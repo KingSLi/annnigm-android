@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".main_fragments.PersonFragment" android:orientation="vertical">
+
+
+    <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loading_logo"
+            android:id="@+id/imageView"
+            android:layout_weight="1"/>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:id="@+id/properties_table_layout">
+        <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+        >
+            <TableRow android:padding="10dp">
+                <TextView
+                        android:text="@string/ru_name"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view_name"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/some_rectangle_form"
+                        android:padding="10dp"
+                        android:id="@+id/person_name"/>
+            </TableRow>
+            <TableRow android:padding="10dp">
+                <TextView
+                        android:text="@string/ru_surname"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view_surname"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimary"
+                        android:ems="10"
+                        android:background="@drawable/some_rectangle_form"
+                        android:padding="10dp"
+                        android:id="@+id/person_email"/>
+            </TableRow>
+            <TableRow android:padding="10dp">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ru_birthday"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/view_date"/>
+                <TextView
+                        android:id="@+id/person_date"
+                        android:layout_width="200dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/some_rectangle_form"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"/>
+
+            </TableRow>
+            <TableRow android:padding="10dp" android:gravity="center">
+                <TextView
+                        android:text="@string/input_sex"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view_sex"/>
+                <TextView
+                        android:id="@+id/person_gender"
+                        android:layout_width="200dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/some_rectangle_form"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"/>
+                <!--<info.hoang8f.android.segmented.SegmentedGroup-->
+                        <!--xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:id="@+id/person_gender"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_weight="1"-->
+                        <!--segmentedgroup:sc_border_width="1dp"-->
+                        <!--segmentedgroup:sc_corner_radius="5dp"-->
+                        <!--android:layout_gravity="center_horizontal">-->
+
+                    <!--<RadioButton-->
+                            <!--android:id="@+id/person_gender_man"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="м"-->
+                            <!--style="@style/RadioButton"/>-->
+
+                    <!--<RadioButton-->
+                            <!--android:id="@+id/person_gender_woman"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="ж"-->
+                            <!--style="@style/RadioButton"/>-->
+                <!--</info.hoang8f.android.segmented.SegmentedGroup>-->
+            </TableRow>
+            <TableRow android:padding="10dp">
+                <TextView
+                        android:text="@string/weight_kg"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view_weight"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/some_rectangle_form"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:ems="10"
+                        android:id="@+id/person_weight"/>
+            </TableRow>
+            <TableRow android:padding="10dp">
+                <TextView
+                        android:text="@string/height_sm"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view_height"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/some_rectangle_form"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:ems="10"
+                        android:id="@+id/person_height"/>
+            </TableRow>
+        </TableLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+        <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Выйти"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/some_rectangle_form"
+                android:id="@+id/button_sign_out"/>
+        <!--<Button android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+                <!--android:text="Edit" android:id="@+id/button_edit_save"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>
